@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="DIApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Dependency Injection in Javascript</title>
+</head>
+<body>
+    <h1>Dependency Injection in Javascript (and AngularJS)</h1>
+    <div ng-controller="DIController">
+        <input ng-model="name"
+               ng-blur="upper();">
+        <div>
+            <button ng-click="airplan_status_change()">Dar inicio al vuelo</button>
+            <br>
+            <img ng-src="images/en_{{airplan_status}}.jpg">
+        </div>
+    </div>    
+</body>
+</html>
